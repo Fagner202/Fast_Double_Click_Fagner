@@ -69,7 +69,7 @@ docker-compose up --build
 http://localhost:8080
 ```
 
-4. Use a interface para escolher um tipo de dado e clicar em **"Rolar"**.
+4. Agora é so Clicar em Registrar Agora.
 
 ---
 
