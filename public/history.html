@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Histórico de Registros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📜 Histórico de Registros</h1>
+
+    <div class="controls">
+      <label for="sort">Ordenar:</label>
+      <select id="sort">
+        <option value="">Padrão</option>
+        <option value="asc">Mais antigos primeiro</option>
+        <option value="desc">Mais recentes primeiro</option>
+      </select>
+
+      <label for="from">De:</label>
+      <input type="datetime-local" id="from">
+
+      <label for="to">Até:</label>
+      <input type="datetime-local" id="to">
+
+      <button onclick="loadHistory()">Filtrar</button>
+    </div>
+
+    <ul id="history-list"></ul>
+  </div>
+
+  <script src="history.js"></script>
+</body>
+</html>
